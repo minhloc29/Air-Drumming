@@ -62,7 +62,7 @@ def load_labels(label_path):
         
     return [label['class']], label['bbox']
 
-def load_tensor_data(folder_path, batch_size = 16):
+def load_tensor_data(folder_path, batch_size = 16, input_size = (224,224)):
     images = tf.data.Dataset.list_files(f"{folder_path}/images/*.jpg", shuffle = False)
     images = images.map(load_image)
     images = images.map(lambda x: tf.image.resize(x, (224,224)))
@@ -73,5 +73,16 @@ def load_tensor_data(folder_path, batch_size = 16):
 
     data = tf.data.Dataset.zip((images, labels))
     data = data.shuffle(buffer_size=1000).batch(batch_size).prefetch(tf.data.experimental.AUTOTUNE)
+    
+    def reshape_data(x, y):
+        return (
+            tf.ensure_shape(x, [None, *input_size, 3]),
+            (
+                tf.ensure_shape(y[0], [None, 1]), 
+                tf.ensure_shape(y[1], [None, 4])
+            )
+        )
+    
+    data = data.map(reshape_data)
     
     return data
