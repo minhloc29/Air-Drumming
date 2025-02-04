@@ -12,6 +12,16 @@ This **Air Drum Project** allows you to play drums using hand movements and mout
 ## 3. Installation
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/minhloc29/Air-Drumming.git]
-  
-[
+   git clone https://github.com/minhloc29/Air-Drumming.git
+   
+2. Navigate into the project directory:
+   ```bash
+   cd air-drum-project
+   
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Run the app
+   ```bash
+   python air_drum.py
