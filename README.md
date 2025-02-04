@@ -25,12 +25,13 @@ This **Air Drum Project** allows you to play drums using hand movements and mout
 4. Run the app
    ```bash
    python air_drum.py
-## 4 Demo
+## 4. Demo
 1. Below is the demo of the project
    
 ![Air Drum Demo](asset/Ghi%20Màn%20hình%202025-02-04%20lúc%2012.58.12.gif)
 
-3. Link to watch the demo played with a song: https://www.youtube.com/watch?v=KxV9vS-xqko
-4. Note:
+2. Link to watch the demo played with a song: https://www.youtube.com/watch?v=KxV9vS-xqko
+   
+3. Note:
 - Before playing, make sure both hands are recognized on the screen.
-- Adjust your mouth to show up in the center of the camera and is not hidden under other instruments.
+- Adjust your mouth to show up in the center of the camera and not hidden under other instruments.
