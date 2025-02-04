@@ -26,4 +26,4 @@ This **Air Drum Project** allows you to play drums using hand movements and mout
    ```bash
    python air_drum.py
 ## 4 Demo
-![Air Drum Demo](asset/"Ghi Màn hình 2025-02-04 lúc 12.58.12.gif")
+![Air Drum Demo](asset/Ghi%20Màn%20hình%202025-02-04%20lúc%2012.58.12.gif)
