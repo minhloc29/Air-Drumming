@@ -1,0 +1,4 @@
+simpleaudio
+mediapipe
+numpy
+matplotlib
